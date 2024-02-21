@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coches</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header id="pegado">
+        <img id="logo" src="../imagenes/TITAN.png" alt="Titan Logo" width="1080" height="308">
+        <ul>
+            <li><a href="../index.html">INICIO</a></li>
+            <li><a href="./productos.html">PRODUCTOS</a></li>
+            <li class="inicio"><a href="../views/presupuestos.html">PRESUPUESTO</a></li>
+            <li><a href="./contacto.html">UBICACIÓN</a></li>
+        </ul>
+    </header><br><br><br>
+    <main>
+        <form class="cuadro">
+            <fieldset>
+                <legend id="insertar">Inserta aqui tus datos y te contactaremos</legend>
+                    
+                        <div>
+                            <label for="nombre">NOMBRE</label> <br>
+                            <input id="nombre" placeholder="NOMBRE" required pattern="[A-Za-zñÑáéíóúÁÉÍÓÚ\s]+" type="text" class="formu">
+                            <small>ERROR</small>
+                        </div>
+                        <div>
+                            <label>APELLIDOS</label><br>
+                            <input id="apellidos" placeholder="APELLIDOS" required pattern="[A-Za-zñÑáéíóúÁÉÍÓÚ\s]+" type="text" class="formu">
+                            <small>ERROR</small>
+                        </div>
+                        <div>
+                            <label>TELEFONO</label><br>
+                            <input id="telefono" placeholder="EJ:666534722" required pattern="[0-9]{9}" type="text" class="formu">
+                            <small>ERROR</small>
+                        </div>
+                        <div>
+                            <label>EMAIL</label><br>
+                            <input id="correo" placeholder="ejemplo@gmail.com" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" type="email" class="formu">
+                            <small>ERROR</small>
+                        </div> <br>
+            </fieldset>
+            <fieldset>
+                <legend>PRESUPUESTO</legend>
+                <div>
+                    <label for="producto">Producto:</label><br>
+                    <select id="producto" class="formu">
+                        <option value="">Elija un producto</option>
+                        <option value="150000">Lamborguini - $150000</option>
+                        <option value="350000">Ferrari - $350000</option>
+                        <option value="100000">Aston Martin - $100000</option>
+                        <option value="1500000">Koenigsegg - $1500000</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="plazo">Plazo (meses):</label><br>
+                    <input id="plazo" type="number" value="0" min="0" title="Por favor, introduce un número positivo">
+                </div>                
+                <div>
+                    <label>Extras:</label><br>
+                    <input type="checkbox" id="extra1" class="extra" value="550">
+                    <label for="extra1">Touch Panel - $550</label><br>
+                    <input type="checkbox" id="extra2" class="extra" value="50">
+                    <label for="extra1">Asientos de cuero - $50</label><br>
+                    <input type="checkbox" id="extra3" class="extra" value="900">
+                    <label for="extra1">Descapotable - $900</label><br>
+                </div>
+                <div>
+                    <label>Presupuesto:</label><br>
+                    <span id="presupuesto">0</span>
+                </div>
+                
+            </fieldset>
+                        <div>
+                            <input id="privacidad" type="checkbox" required="">Acepta las politicas de privacidad.
+                            <small>ERROR</small> <br> <br>
+                        </div>
+              
+        </form>
+        <div id="botones">
+            <input id="enviar" type="button" value="enviar">
+            <input id="borrar" type="button" value="borrar">
+        </div>
+
+    </main>
+    <script src="../JS/presupuestos.js"></script>
+    <footer class="pie">
+        <div class="izquierda">
+            <div>Telefono: 11111111</div>
+            <div>Email: <a id="email" href="mailto:titanforged@gmail.com">titanforged@gmail.com</a></div>
+            <div>Código postal: 38099</div>
+            <div><a id="copyri" href="https://copyright.es/">Copy right 2021</a></div>
+        </div>
+        <div class="logos">
+            <a href="https://www.facebook.com/"><img class="face" src="../imagenes/Facebooklogo.png" alt="facebook" width="2028" height="2048"></a>
+            <a href="https://www.instagram.com/"><img class="ins" src="../imagenes/insta.jpeg" alt="instagram" width="626" height="626"></a>
+        </div>
+    </footer>
+</body>
+</html>

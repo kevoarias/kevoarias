@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coches</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css">
+</head>
+<body>
+    <header id="pegado">
+        <img id="logo" src="../imagenes/TITAN.png" alt="Titan Logo" width="1080" height="308">
+        <ul>
+            <li><a href="../index.html">INICIO</a></li>
+            <li><a href="../views/productos.html">PRODUCTOS</a></li>
+            <li><a href="../views/presupuestos.html">PRESUPUESTO</a></li>
+            <li class="inicio"><a href="../views/contacto.html">UBICACIÓN</a></li>
+        </ul>
+    </header>
+    <main>
+        <!-- Contenedor para el mapa -->
+        <div id="mapita"></div>
+        <div id="ubicate">
+            <p>Dirección: 56 Bd du Jardin Exotique, 98000 Monaco, Mónaco</p>
+            <p>Telefono: 11111111</p>
+            <p>Email: <a class="email" href="mailto:titanforged@gmail.com">titanforged@gmail.com</a></p>
+            <p>Código postal: 38099</p>
+        </div>
+    </main>
+    <footer class="pie">
+        <div class="izquierda">
+            <div>Telefono: 11111111</div>
+            <div>Email: <a class="email" href="mailto:titanforged@gmail.com">titanforged@gmail.com</a></div>
+            <div>Código postal: 38099</div>
+            <div><a id="copyri" href="https://copyright.es/">Copy right 2021</a></div>
+        </div>
+        <div class="logos">
+            <a href="https://www.facebook.com/"><img class="face" src="../imagenes/Facebooklogo.png" alt="facebook" width="2028" height="2048"> </a>
+            <a href="https://www.instagram.com/"><img class="ins" src="../imagenes/insta.jpeg" alt="instagram" width="626" height="626"></a>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+    <script src="../JS/maps.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coches</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script  src="https://www.gstatic.com/charts/loader.js"></script> 
+</head>
+<body>
+    <header id="pegado">
+        <img id="logo" src="imagenes/TITAN.png" alt="Titan Logo" width="1080" height="308">
+        <ul>
+            <li class="inicio"><a href="./index.html">INICIO</a></li>
+            <li><a href="./views/productos.html">PRODUCTOS</a></li>
+            <li><a href="./views/presupuestos.html">PRESUPUESTO</a></li>
+            <li><a href="./views/contacto.html">UBICACIÓN</a></li>
+        </ul>
+    </header>
+    <main>
+        <section id="top" class="lorem">
+            <h1>Cargando noticias...</h1>
+        </section>
+
+        <section class="lorem">
+            <h3>Phasellus ante pellentesque erat cum risus consequat imperdiet aliquam, integer placerat et turpis mi eros nec lobortis taciti, vehicula nisl litora tellus ligula porttitor metus.</h3>
+        </section>
+
+        <section class="lorem">
+            <h3>Gráfico de venta de coches</h3>
+            <div id="midiv"></div>
+        </section>
+        <section class="lorem">
+            <h3>Deja un comentario</h3>
+            <form id="commentForm">
+            <label for="name">Nombre:</label> <br>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="mailbox">Correo electrónico:</label> <br>
+            <input type="email" id="mailbox" name="email" required><br><br>
+            
+            <label for="comment">Comentario:</label><br>
+            <textarea id="comment" name="comment" rows="4" cols="50" required></textarea><br><br>
+            
+            <input type="submit" value="Enviar comentario">
+            </form>
+        </section>
+
+    </main>
+    <footer class="pie">
+        <div class="izquierda">
+            <div>Telefono: 11111111</div>
+            <div>Email: <a id="email" href="mailto:titanforged@gmail.com">titanforged@gmail.com</a></div>
+            <div>Código postal: 38099</div>
+            <div><a id="copyri" href="https://copyright.es/">Copy right 2021</a></div>
+        </div>
+        <div class="logos">
+            <a href="https://www.facebook.com/"><img class="face" src="imagenes/Facebooklogo.png" alt="facebook" width="2028" height="2048"></a>
+            <a href="https://www.instagram.com/"><img class="ins" src="imagenes/insta.jpeg" alt="instagram" width="626" height="626"></a>
+        </div>
+    </footer>
+    <script src="JS/loadXML.js"></script>
+    <script src="JS/chart.js"></script>
+    
+</body>
+</html>
